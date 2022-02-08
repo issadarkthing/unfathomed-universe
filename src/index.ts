@@ -3,6 +3,7 @@ import path from "path";
 import { config } from "dotenv";
 import { DateTime } from "luxon";
 
+
 config();
 
 export const client = new Client({ 
@@ -19,6 +20,7 @@ export const client = new Client({
     "REACTION",
   ]
 });
+
 
 client.commandManager.verbose = true;
 client.commandManager.registerCommands(path.resolve(__dirname, "./commands"));
