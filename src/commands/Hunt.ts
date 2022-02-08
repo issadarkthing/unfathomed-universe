@@ -32,7 +32,6 @@ class SearchMonster extends ButtonHandler {
 export default class extends Command {
   name = "hunt";
   description = "start hunting";
-  block = true;
 
   async exec(msg: Message) {
 
