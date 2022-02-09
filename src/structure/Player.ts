@@ -100,11 +100,6 @@ export class Player extends PlayerRPG {
   show() {
     const profile = super.show();
 
-    const skillIndex = 6;
-    profile.fields.at(skillIndex)!.name = "\u200b";
-    profile.fields.at(skillIndex)!.value = "\u200b";
-    profile.fields.at(skillIndex)!.inline = true;
-
     const armorIndex = 8;
     const armor = profile.fields.at(armorIndex)!.value;
     profile.fields.at(armorIndex)!.name = currency;

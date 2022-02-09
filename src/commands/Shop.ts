@@ -14,6 +14,7 @@ import { stripIndents } from "common-tags";
 import { Item } from "../structure/Item";
 import { Weapon } from "../structure/Weapon";
 import { Pet } from "../structure/Pet";
+import { Skill } from "../structure/Skill";
 import { MessageEmbed } from "../structure/MessageEmbed";
 
 interface ItemLike {
@@ -48,6 +49,7 @@ export default class extends Command {
         case "armor": items = Armor.all; break;
         case "weapon": items = Weapon.all; break;
         case "pet": items = Pet.all; break;
+        case "skill": items = Skill.all; break;
         default: items = null;
       }
 
@@ -99,6 +101,7 @@ export default class extends Command {
       armor
       weapon
       pet
+      skill
       ------
       To open armor shop use command \`${prefix}${this.name} armor\`
       `;
